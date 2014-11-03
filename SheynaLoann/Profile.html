@@ -6,6 +6,7 @@
 
     <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/profile.css">
 
   </head>
@@ -14,16 +15,22 @@
 
     <!--header-->
 
-    <header class="main-header section group">
-      <div class="col span_3_of_3">
-      <h1>Music Swap</h1>
+    <header role="banner" class="main-header col span_3_of_3">
+      <nav class="main-nav">
+        <h1>Music Swap</h1>
+        <ul>
+          <li><a href="index.html">Latest News</a></li>
+          <li><a href="#">Collaborations</a></li>
+          <li><a href="#">New Artists</a></li>
+          <li><a href="#">Log In</a></li>
+          <li><a href="Profile.html">Sign Up</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!--nav-->
-
-    <nav class="main-nav col span_3_of_3">
+    <header class="main-nav col span_3_of_3">
       <h2>Welcome! Make your profile</h2>
-    </nav>
+    </header>
 
     <!--main-->
 
@@ -169,7 +176,7 @@
               <label for="password1">Password <span class="color1">&#42;</span></label>
             </li>
           </ul>
-          <small>Passwords must include at least one capital letter, lower case letter and number.</small>
+          <!-- <small>Passwords must include at least one capital letter, lower case letter and number.</small> -->
           <ul class="field width-largerThanHalf">
             <li>
               <input type="password" pattern=".+" required placeholder="Reenter Password &#42;" class="persisted-text" name="password2" id="password2" autofocus>
@@ -190,7 +197,7 @@
         <figure id="picArea" class="profilePic"></figure>
 
         <p>Select an image file:<br />
-        <input type="file" id="fileInput"></p>
+        <input type="file" class="no-border" id="fileInput"></p>
 
         <p>Don't have a photo?<br />
           Easy! <a href="Camera.html">Take one instantly</a></p>

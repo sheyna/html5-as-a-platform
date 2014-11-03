@@ -6,6 +6,7 @@
 
     <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/profile.css">
 
   </head>
@@ -14,16 +15,22 @@
 
     <!--header-->
 
-    <header class="main-header section group">
-      <div class="col span_3_of_3">
-      <h1>Music Swap</h1>
+    <header class="main-header col span_3_of_3">
+      <nav class="main-nav">
+        <h1>Music Swap</h1>
+        <ul>
+          <li><a href="index.html">Latest News</a></li>
+          <li><a href="#">Collaborations</a></li>
+          <li><a href="#">New Artists</a></li>
+          <li><a href="#">Log In</a></li>
+          <li><a href="Profile.html">Sign Up</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!--nav-->
-
-    <nav class="main-nav col span_3_of_3">
+    <header class="main-nav col span_3_of_3">
       <h2>Take a Profile Picture</h2>
-    </nav>
+    </header>
 
     <!--main-->
 
@@ -31,20 +38,17 @@
 
       <!--profile image column at right-->
 
-      <section class="class="stacked col span_5_of_8"">
-        <h2 hidden>Take a Profile Picture</h2>
+      <section class="stacked col span_3_of_8">
+        <h2 hidden>Input</h2>
+        <div id="webcam" class="cameraPic"></div>
+      </section>
 
-        <!-- <div id="input" class="profilePic"></div>
-        <canvas id="output" class="profilePic"></canvas> -->
-
-      <div id="webcam"></div>
-      <canvas id="canvas"  height="240" width="320"></canvas>
-
+      <section class="col span_3_of_8">
+        <h2 hidden>Output</h2>
+        <canvas id="canvas" class="cameraPic"></canvas>
 
         <menu>
-          <button id="accessCamera">Access Camera</button>
-          <button id="takeSnapshot">Take Snapshot</button>
-          <button id="stopCamera">Stop Camera</button>
+          <button id="takeSnapshot" class="center">Take Snapshot</button>
         </menu>
       </section>
 
